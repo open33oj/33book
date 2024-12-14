@@ -1,20 +1,13 @@
 ---
 title: 入门基础
-layout: SlidePage
+order: 1
 ---
 
-
-@slidestart blood
-
 ## 啥是编程？
-
---
 
 ### 数字电路
 
 ![](/assets/image/ppt/lesson1/1.jpg)
-
---
 
 ### 机器语言
 
@@ -27,8 +20,6 @@ layout: SlidePage
 010000000
 ```
 
---
-
 ### 汇编语言
 
 ```bash
@@ -40,8 +31,6 @@ MOV 3 7
 OUT
 ```
 
---
-
 ### 高级语言
 
 ```cpp
@@ -52,15 +41,11 @@ x3 = x1 + x2;
 cout << x3;
 ```
 
----
-
 ## 60 点游戏
 
 $3,5,6,8,10$ 加减乘除怎么算出 $60$？
 
 可以改变顺序、用小括号
-
---
 
 ### 算 60 点的程序
 
@@ -130,8 +115,6 @@ int main() {
     return 0;
 }
 ```
-
---
 
 ### $3,5,6,8,10$ 的解
 
@@ -822,32 +805,21 @@ int main() {
 ((((5 / 10) * 3) + 6) * 8) = 60
 ```
 
----
-
-
 ## Dev-C++
 
 ![](/assets/image/ppt/lesson1/2.jpg)
-
---
 
 ### 新建文件
 
 ![](/assets/image/ppt/lesson1/3.jpg)
 
---
-
 ### 第一个程序：你好世界！
 
 ![](/assets/image/ppt/lesson1/4.jpg)
 
---
-
 ### 抓虫（debug）
 
 ![](/assets/image/ppt/lesson1/5.jpg)
-
----
 
 ## 学会输出
 
@@ -861,8 +833,6 @@ int main()
 }
 ```
 
---
-
 ### 一些单词
 
 - `include` : 包含
@@ -871,16 +841,12 @@ int main()
 - `namespace` : name+space 命名空间
 - `std` : standard 标准
 
---
-
 - `int` : integer 整数
 - `main` : 主要的
 - `cout` : character+out 字符输出 
 - `Hello World` : 你好世界
 - `return` : 返回
 - `0` : 没有消息就是最好的消息，0 表示成功运行结束
-
---
 
 ### 完整含义
 
@@ -893,8 +859,6 @@ int main()                 // 定义一个返回整数的主函数
     return 0;              // 返回 0
 }
 ```
-
---
 
 ### 简单框架
 
@@ -910,8 +874,6 @@ int main()
 }
 ```
 
---
-
 ### 这段程序会输出什么？
 
 ```cpp
@@ -926,15 +888,11 @@ int main()
 }
 ```
 
---
-
 ### 转义符
 
 有一些特殊字符需要使用转义符的方式表示
 
 ![](/assets/image/ppt/lesson1/6.jpg)
-
---
 
 ### `cout` 语句
 
@@ -950,8 +908,6 @@ int main()
 }
 ```
 
---
-
 ### `cout` 语句
 
 ```cpp
@@ -965,8 +921,6 @@ int main()
 }
 ```
 
---
-
 ### `cout` 语句
 
 ```cpp
@@ -979,15 +933,11 @@ int main()
 }
 ```
 
----
-
 ## 字符串与数学表达式
 
 ![](/assets/image/ppt/lesson1/7.jpg)
 
 **A**merican **S**tandard **C**ode for **I**nformation **I**nterchange
-
---
 
 ### 啥是字符串？
 
@@ -1002,8 +952,6 @@ int main()
 - `""`<!-- .element: class="fragment fade-in" -->
     - 字符串<!-- .element: class="fragment fade-in" -->
     - 空串也是字符串<!-- .element: class="fragment fade-in" -->
-
---
 
 ### 数学表达式
 
@@ -1020,8 +968,6 @@ int main()
 }
 ```
 
---
-
 ### 数学运算符
 
 - `+`: 加法
@@ -1031,13 +977,9 @@ int main()
 - `%`：取余/取模
 - `()`: 数学中的小括号、中括号、大括号在 C++ 中统统用小括号
 
---
-
 - 如果两个运算数都是整数，运算结果也会是整数（除法变成整除）
 只要有一个运算数是小数（浮点数），运算结果就会的到小数
 - 取余只能在整数间进行！不能除以0或对0取余！
-
---
 
 ### 口算训练
 
@@ -1050,8 +992,6 @@ int main()
     return 0;
 }
 ```
-
----
 
 ## 变量与赋值语句
 
@@ -1070,8 +1010,6 @@ int main()
 }
 ```
 
---
-
 ## 常见数据类型/变量类型
 
 - 整数： int、long long
@@ -1079,8 +1017,6 @@ int main()
 - 字符：char
 - 布尔：bool
 - 字符串：string
-
---
 
 ```cpp
 #include <bits/stdc++.h>
@@ -1093,8 +1029,6 @@ int main()
 }
 ```
 
---
-
 ### 变量定义规则（比赛环境）
 
 变量定义方法：
@@ -1102,14 +1036,10 @@ int main()
 - 变量类型 变量名 = 初始值;
 - 变量类型 变量名1, 变量名2, 变量名3;
 
---
-
 变量命名规则：
 - 字母或下划线开头
 - 只能包含字母、数字、下划线
 - 不能是 C++ 关键字
-
---
 
 以下哪些不符合规则？
 1. abc
@@ -1121,8 +1051,6 @@ int main()
 7. _123
 8. int
 9. _x3
-
---
 
 ### 赋值语句
 
@@ -1141,8 +1069,6 @@ int main()
 }
 ```
 
---
-
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -1155,8 +1081,6 @@ int main()
 }
 ```
 
---
-
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -1168,8 +1092,6 @@ int main()
     return 0;
 }
 ```
-
---
 
 ### 语法糖
 
@@ -1188,8 +1110,6 @@ int main()
 }
 ```
 
---
-
 - `a += b;` ~ `a = a + b;`
 - `a -= b;` ~ `a = a - b;`
 - `a *= b;` ~ `a = a * b;`
@@ -1197,5 +1117,3 @@ int main()
 - `a %= b;` ~ `a = a % b;`
 - `a++;` ~ 将 `a` 增加 $1$；作为表达式时，值为增加之前的值
 - `++a;` ~ 将 `a` 增加 $1$；作为表达式时，值为增加之后的值
-
-@slideend

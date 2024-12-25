@@ -16,10 +16,6 @@ highlights:
         icon: fa-solid fa-code
         details: 33dai 维护的在线评测系统
         link: https://oj.33dai.cn
-      - title: 33OJ-TEMP
-        icon: fa-solid fa-code
-        details: 备案转换期间备用
-        link: https://oj.33dai.wiki
       - title: open33oj
         icon: fa-brands fa-github
         details: OJ 题目插件、以及本站源码

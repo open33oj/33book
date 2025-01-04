@@ -63,6 +63,9 @@ highlights:
       - title: 上海月赛
         icon: fa-solid fa-keyboard
         link: https://iai.sh.cn 
+      - title: 陕西月赛
+        icon: fa-solid fa-keyboard
+        link: https://oi.sn.cn 
       - title: 挖土机 OJ
         icon: fa-solid fa-keyboard
         link: https://oj.since2018.top

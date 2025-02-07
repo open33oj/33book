@@ -6,3 +6,4 @@ src/.vuepress/dist/
 *.exe
 *.cpp
 .cph
+.vscode

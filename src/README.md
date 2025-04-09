@@ -7,8 +7,6 @@ actions:
     link: /doc/
   - text: 题解
     link: /sol/
-  - text: PPT
-    link: /ppt/
 highlights:
   - header: 33DAI 维护的
     features:
@@ -18,16 +16,12 @@ highlights:
         link: https://oj.33dai.cn
       - title: open33oj
         icon: fa-brands fa-github
-        details: OJ 题目插件、以及本站源码
+        details: OJ 插件、以及本站源码
         link: https://github.com/orgs/open33oj/repositories
       - title: 三三文档
         icon: fa-solid fa-book
         details: 题解、知识点文档、PPT
         link: https://33dai.wiki
-      - title: OIerDB
-        icon: fa-solid fa-person
-        details: 33DAI 维护的 OIerDB 镜像
-        link: https://oier.33dai.wiki
       - title: C++ 参考手册
         icon: fa-solid fa-c
         details: cppreference 中文镜像
@@ -36,10 +30,19 @@ highlights:
         icon: fa-solid fa-p
         details: Python 3.8.14 文档中文镜像
         link: https://py.33dai.wiki
+  - header: 常用工具
+    features:
+      - title: NOI 官网
+        icon: fa-solid fa-gear
+        link: https://www.noi.cn
+      - title: OIerDB
+        icon: fa-solid fa-person
+        details: OI 选手数据库
+        link: https://oier.baoshuo.dev/
       - title: OI Wiki
         icon: fa-solid fa-o
-        details: OI Wiki 中文镜像
-        link: https://oiwiki.33dai.wiki
+        details: OI 百科
+        link: http://oiwiki.org/
   - header: 常用 OJ
     features:
       - title: 洛谷
@@ -48,18 +51,12 @@ highlights:
       - title: AtCoder
         icon: fa-solid fa-keyboard
         link: https://atcoder.jp
-      - title: CodeForces
+      - title: 核桃周赛
         icon: fa-solid fa-keyboard
-        link: https://codeforces.com
-      - title: LibreOJ
+        link: https://htoj.hetao101.com/cpp/
+      - title: 代码源挑战赛
         icon: fa-solid fa-keyboard
-        link: https://loj.ac
-      - title: UOJ
-        icon: fa-solid fa-keyboard
-        link: https://uoj.ac
-      - title: HydroOJ
-        icon: fa-solid fa-keyboard
-        link: https://hydro.ac
+        link: https://bs.daimayuan.top/
       - title: 上海月赛
         icon: fa-solid fa-keyboard
         link: https://iai.sh.cn 
@@ -69,11 +66,20 @@ highlights:
       - title: 挖土机 OJ
         icon: fa-solid fa-keyboard
         link: https://oj.since2018.top
-  - header: 常用工具
+      - title: HydroOJ
+        icon: fa-solid fa-keyboard
+        link: https://hydro.ac
+      - title: CodeForces
+        icon: fa-solid fa-keyboard
+        link: https://codeforces.com
+      - title: LibreOJ
+        icon: fa-solid fa-keyboard
+        link: https://loj.ac
+      - title: UOJ
+        icon: fa-solid fa-keyboard
+        link: https://uoj.ac
+  - header: 其他工具
     features:
-      - title: NOI 官网
-        icon: fa-solid fa-gear
-        link: https://www.noi.cn
       - title: IOI 官网
         icon: fa-solid fa-gear
         link: https://ioinformatics.org/

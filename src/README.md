@@ -5,6 +5,8 @@ heroImage: /33.png
 actions:
   - text: 文档
     link: /doc/
+  - text: 模板
+    link: /tmpl/
   - text: 题解
     link: /sol/
 highlights:

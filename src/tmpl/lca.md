@@ -8,6 +8,76 @@ title: "最近公共祖先"
 
 每次询问点两个点的 `lca`。
 
+## 预处理 $\sqrt{n}$ 祖先
+
+$O((n+Q)\sqrt{n})$
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+const int MAXN = 500000;
+int n, m, s, nn;
+vector<int> e[MAXN + 5];
+int fa[MAXN + 5];   // fa[u] 记录 u 的父节点
+int faNN[MAXN + 5]; // faNN[u] 记录 u 的 nn 层祖宗节点
+int dep[MAXN + 5];  // dep[u] 记录 1 为根节点时的深度
+void dfs(int u, int father)
+{
+    fa[u] = father;
+    for (int v : e[u])
+    {
+        if (v == father)
+            continue;
+        dep[v] = dep[u] + 1;
+        dfs(v, u);
+    }
+}
+int lca(int u, int v)
+{
+    if (dep[v] < dep[u])
+        swap(u, v);
+    while (dep[v] - dep[u] >= nn)
+        v = faNN[v];
+    while (dep[v] != dep[u])
+        v = fa[v];
+    while (faNN[v] != faNN[u])
+        u = faNN[u], v = faNN[v];
+    while (u != v)
+        u = fa[u], v = fa[v];
+    return u;
+}
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cin >> n >> m >> s;
+    nn = sqrt(n);
+    for (int i = 1; i <= n - 1; i++)
+    {
+        int u, v;
+        cin >> u >> v;
+        e[u].push_back(v);
+        e[v].push_back(u);
+    }
+    dep[s] = 0;
+    dfs(s, 0);
+    for (int u = 1; u <= n; u++)
+    {
+        faNN[u] = u;
+        for (int i = 1; i <= nn; i++)
+            faNN[u] = fa[faNN[u]];
+    }
+    while (m--)
+    {
+        int u, v;
+        cin >> u >> v;
+        cout << lca(u, v) << "\n";
+    }
+    return 0;
+}
+
+```
+
 ## 倍增
 
 ```cpp

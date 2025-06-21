@@ -209,7 +209,7 @@ using namespace std;
 const int MAXN = 100000;
 int n, m;
 int a[MAXN + 5];
-// 线段树：单点修改、区间查询（区间和）
+// 线段树
 int t[4 * MAXN + 5], lazy[4 * MAXN + 5];
 // 基于a[]建线段树
 void build(int now, int l, int r)
@@ -468,7 +468,6 @@ int a[MAXN + 5];
 int tot = 1;                            // 节点数量
 int lson[MAXTOT + 5], rson[MAXTOT + 5]; // 左右子节点
 int t[MAXTOT * 4 + 5];
-int lazy[MAXTOT * 4 + 5];
 void update(int now, int l, int r, int x, int y)
 {
     if (l == r)

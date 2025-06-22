@@ -467,7 +467,7 @@ int a[MAXN + 5];
 // 动态开点线段树维护权值数组
 int tot = 1;                            // 节点数量
 int lson[MAXTOT + 5], rson[MAXTOT + 5]; // 左右子节点
-int t[MAXTOT * 4 + 5];
+int t[MAXTOT + 5];
 void update(int now, int l, int r, int x, int y)
 {
     if (l == r)

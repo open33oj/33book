@@ -1,6 +1,6 @@
 ---
-title: 题解 
 index: false
+dir:
+  text: 题解 
+  order: 3
 ---
-
-这里会放比赛题解以及题目题解

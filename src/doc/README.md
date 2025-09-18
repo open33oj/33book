@@ -1,4 +1,6 @@
 ---
-title: 文档
 index: false
+dir:
+  text: 文档
+  order: 1
 ---

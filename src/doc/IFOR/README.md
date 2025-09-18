@@ -1,6 +1,6 @@
 ---
 index: false
 dir:
-  text: 模板
+  text: 选择与循环
   order: 2
 ---

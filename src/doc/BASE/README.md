@@ -1,6 +1,6 @@
 ---
 index: false
 dir:
-  text: 模板
-  order: 2
+  text: 基础
+  order: 1
 ---

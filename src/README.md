@@ -104,5 +104,3 @@ highlights:
         icon: fa-solid fa-gear
         link: https://www.geogebra.org/graphing
 ---
-
-之前的 [33 Wiki](https://wiki.33dai.cn) 的内容都会逐渐迁移到这里。
